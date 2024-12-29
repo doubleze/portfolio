@@ -5,14 +5,14 @@
     <meta http-equiv="Content-Security-Policy" 
     content="
         default-src 'self';
-        script-src 'self' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;
+        script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' chrome-extension: 
+            'strict-dynamic' blob: http: https:;
         style-src 'self' 'unsafe-inline' https: http:;
         font-src 'self' https: data:;
-        img-src 'self' data: https:;
-        connect-src 'self' ws: wss: https: http:;
+        img-src 'self' data: blob: https:;
+        connect-src 'self' ws: wss: https: http: chrome-extension:;
         base-uri 'self';
         form-action 'self';
-        frame-ancestors 'none';
         object-src 'none';
         ">
     <link rel="icon" type="image/svg+xml" href="/fabicon.svg" />
