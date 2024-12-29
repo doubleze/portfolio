@@ -11,10 +11,12 @@
         font-src 'self' https://fonts.gstatic.com data:;
         img-src 'self' data: https: blob:;
         connect-src 'self' https://doubleze.github.io/portfolio/;
+        Content-Security-Policy: default-src 'self'; 
+        style-src 'self';
         base-uri 'self';
         form-action 'self';
         ">
-    <link rel="icon" type="image/svg+xml" href="/fabicon.svg" />
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
