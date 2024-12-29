@@ -5,11 +5,11 @@
     <meta http-equiv="Content-Security-Policy" 
     content="
         default-src 'self';
-        script-src 'self' 'unsafe-inline' 'unsafe-eval';
+        script-src 'self' 'unsafe-inline' 'unsafe-eval' http://localhost:5173;
         style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
         img-src 'self' data: https:;
-        connect-src 'self';
+        connect-src 'self' ws://localhost:5173;
         ">
     <link rel="icon" type="image/svg+xml" href="/fabicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
