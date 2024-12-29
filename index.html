@@ -5,15 +5,13 @@
     <meta http-equiv="Content-Security-Policy" 
     content="
         default-src 'self';
-        script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' chrome-extension: 
-            'strict-dynamic' blob: http: https:;
-        style-src 'self' 'unsafe-inline' https: http:;
-        font-src 'self' https: data:;
+        script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' 
+                 'inline-speculation-rules' chrome-extension: 
+                 https://fonts.googleapis.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
         img-src 'self' data: blob: https:;
-        connect-src 'self' ws: wss: https: http: chrome-extension:;
-        base-uri 'self';
-        form-action 'self';
-        object-src 'none';
+        connect-src 'self' ws: wss: http: https: chrome-extension:;
         ">
     <link rel="icon" type="image/svg+xml" href="/fabicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
